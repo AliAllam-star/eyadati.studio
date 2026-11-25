@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="عيادتي ستوديو - قوالب مواقع احترافية للعيادات الطبية وطب الأسنان والجلدية والتجميل، جاهزة للتخصيص مع معاينة مباشرة.">
+  <meta name="keywords" content="قوالب عيادات, قوالب مواقع طبية, تصميم مواقع عيادات أسنان, قوالب جلدية وتجميل">
+  <meta name="author" content="Eyadati Studio">
+
+  <!-- Open Graph (للمشاركة على السوشيال ميديا) -->
+  <meta property="og:title" content="عيادتي ستوديو | قوالب مواقع العيادات">
+  <meta property="og:description" content="قوالب مواقع عيادات متخصصة بتصميم احترافي وتجربة عربية متكاملة.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://yourwebsite.com/og-image.jpg"> <!-- حط رابط صورة اللوجو بتاعك هنا -->
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"> <!-- حط صورة أيقونة صغيرة في فولدر الموقع -->
+  <link rel="stylesheet" href="style.css">
+<title>سياسة الخصوصية | عيادتي ستوديو</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Tajawal:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #ffffff; --surface: #f7f9f8; --ink: #1f2937; --ink-soft: #4b5563; --muted: #6b7280; --line: #e5e7eb; --primary: #1e5b4a; --primary-hover: #154335; --font-body: 'IBM Plex Sans Arabic', sans-serif; --font-display: 'Tajawal', sans-serif; }
+  body { font-family: var(--font-body); background: var(--bg); color: var(--ink); line-height: 1.8; margin: 0; padding: 0; }
+  .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+  .header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  .header h1 { font-family: var(--font-display); color: var(--primary); font-size: 32px; margin-bottom: 10px; }
+  .header p { color: var(--muted); font-size: 14px; }
+  h2 { color: var(--primary); font-size: 20px; margin-top: 30px; margin-bottom: 15px; }
+  p, li { color: var(--ink-soft); font-size: 15px; margin-bottom: 10px; }
+  ul { padding-right: 20px; }
+  .back-link { display: inline-block; margin-top: 40px; color: var(--primary); text-decoration: none; font-weight: 700; border: 2px solid var(--primary); padding: 10px 20px; border-radius: 50px; transition: 0.3s; }
+  .back-link:hover { background: var(--primary); color: #fff; }
+</style>
+<script>
+  // كود قراءة الوضع الليلي
+  const currentTheme = localStorage.getItem('theme');
+  if (currentTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+</script>
+</head>
+<body>
+    <header style="max-width: 900px; margin: 20px auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center;">
+  <a href="index.html" style="display: flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 800; font-size: 20px; font-family: var(--font-display);">
+    <span style="width: 35px; height: 35px; background: var(--primary); color: #fff; border-radius: 10px; display: grid; place-items: center; font-size: 16px;">✳</span>
+    عيادتي
+  </a>
+
+  <div style="display: flex; gap: 10px;">
+    <!-- زرار الوضع الليلي -->
+    <button id="themeToggle" aria-label="الوضع الليلي" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; display: grid; place-items: center; transition: 0.3s;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    </button>
+
+    <!-- زرار اللغة -->
+    <a href="privacy-en.html" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); text-decoration: none; font-weight: 700; font-size: 13px; display: grid; place-items: center; transition: 0.3s;">
+      EN
+    </a>
+  </div>
+</header>
+<div class="container">
+  <div class="header">
+    <h1>سياسة الخصوصية</h1>
+    <p>آخر تحديث: أكتوبر ٢٠٢٥</p>
+  </div>
+  <p>نحن في <strong>عيادتي ستوديو</strong> نولي أهمية قصوى لخصوصية زوارنا وعملائنا. توضح هذه السياسة كيف نقوم بجمع واستخدام وحماية بياناتك الشخصية عند استخدامك لموقعنا أو شراء قوالبنا.</p>
+
+  <h2>1. البيانات التي نجمعها</h2>
+  <p>نقوم بجمع نوعين من البيانات:</p>
+  <ul>
+    <li><strong>بيانات تقدمها بنفسك:</strong> مثل الاسم، البريد الإلكتروني، ورقم الهاتف عند تواصلك معنا أو عند إتمام عملية شراء.</li>
+    <li><strong>بيانات الدفع والمعاملات:</strong> عند إتمام عملية الشراء، تتم معالجة بيانات الدفع الخاصة بك (مثل بيانات البطاقة الائتمانية) بشكل آمن ومباشر من خلال بوابة الدفع <strong>Gumroad</strong>. نحن لا نقوم بتخزين أو الاطلاع على بيانات بطاقتك الائتمانية على خوادمنا.</li>
+  </ul>
+
+  <h2>2. كيف نستخدم بياناتك</h2>
+  <p>نستخدم البيانات التي نجمعها للأغراض التالية:</p>
+  <ul>
+    <li>إتمام عمليات الشراء وتسليم الملفات الرقمية (القوالب) الخاصة بك.</li>
+    <li>التواصل معك بخصوص طلباتك أو الاستفسارات الفنية.</li>
+    <li>إرسال تحديثات أو عروض ترويجية (يمكنك إلغاء الاشتراك في أي وقت).</li>
+    <li>تحسين جودة خدماتنا وموقعنا.</li>
+  </ul>
+
+  <h2>3. مشاركة البيانات مع أطراف ثالثة</h2>
+  <p>نحن لا نبيع أو نتاجر ببياناتك الشخصية. قد نشارك بياناتك فقط مع:</p>
+  <ul>
+    <li><strong>بوابة الدفع Gumroad:</strong> لإتمام عملية الشراء وتوصيل الملفات.</li>
+    <li><strong>مزودي الخدمات:</strong> مثل خدمات البريد الإلكتروني أو الاستضافة، وذلك فقط لتشغيل الموقع وإتمام الخدمات.</li>
+  </ul>
+
+  <h2>4. حماية البيانات</h2>
+  <p>نتخذ إجراءات أمنية مناسبة لحماية بياناتك من الوصول غير المصرح به أو التعديل أو الإفشاء. ومع ذلك، لا يمكن ضمان أمان أي نقل للبيانات عبر الإنترنت بنسبة 100%.</p>
+
+  <h2>5. ملفات تعريف الارتباط (Cookies)</h2>
+  <p>قد يستخدم موقعنا وموقع Gumroad ملفات تعريف الارتباط لتحسين تجربتك وتذكر تفضيلاتك (مثل تفضيل الوضع الليلي في الموقع).</p>
+
+  <h2>6. حقوقك</h2>
+  <p>يحق لك طلب الوصول إلى بياناتك الشخصية أو تعديلها أو حذفها. للقيام بذلك، يرجى التواصل معنا.</p>
+
+  <h2>7. التغييرات في السياسة</h2>
+  <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. سيتم نشر أي تغييرات على هذه الصفحة.</p>
+
+  <h2>8. اتصل بنا</h2>
+  <p>إذا كان لديك أي أسئلة بخصوص سياسة الخصوصية، يمكنك التواصل معنا عبر البريد الإلكتروني: <strong>hello@eyadati.studio</strong></p>
+
+  <a href="index.html" class="back-link">العودة للصفحة الرئيسية</a>
+</div>
+<script>
+  // ===== الحل السحري للوضع الليلي في كل الصفحات =====
+  document.addEventListener('DOMContentLoaded', () => {
+    const isDark = localStorage.getItem('theme') === 'dark';
+    const toggleBtn = document.getElementById('themeToggle');
+
+    // دالة تغيير الألوان
+    function applyDarkMode(enable) {
+      if (enable) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.body.style.backgroundColor = '#121614';
+        document.body.style.color = '#e5e7eb';
+        // تغيير ألوان الكروت والنصوص لو مش متأثرة بالستايل
+        document.querySelectorAll('.container, .content, .contact-form, .contact-info').forEach(el => {
+          el.style.backgroundColor = '#1a211e';
+          el.style.borderColor = '#2d3748';
+          el.style.color = '#e5e7eb';
+        });
+        document.querySelectorAll('h1, h2, h3, p, label, li').forEach(el => {
+          el.style.color = '#e5e7eb';
+        });
+        document.querySelectorAll('input, textarea').forEach(el => {
+          el.style.backgroundColor = '#2d3748';
+          el.style.color = '#fff';
+          el.style.borderColor = '#4a5568';
+        });
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+        document.body.style.backgroundColor = '';
+        document.body.style.color = '';
+        document.querySelectorAll('.container, .content, .contact-form, .contact-info').forEach(el => {
+          el.style.backgroundColor = '';
+          el.style.borderColor = '';
+          el.style.color = '';
+        });
+        document.querySelectorAll('h1, h2, h3, p, label, li').forEach(el => {
+          el.style.color = '';
+        });
+        document.querySelectorAll('input, textarea').forEach(el => {
+          el.style.backgroundColor = '';
+          el.style.color = '';
+          el.style.borderColor = '';
+        });
+      }
+    }
+
+    // تطبيق الوضع المحفوظ أول ما الصفحة تفتح
+    applyDarkMode(isDark);
+
+    // تشغيل الزرار
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        const currentlyDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const newMode = !currentlyDark;
+        localStorage.setItem('theme', newMode ? 'dark' : 'light');
+        applyDarkMode(newMode);
+      });
+    }
+  });
+</script>
+</body>
+</html>

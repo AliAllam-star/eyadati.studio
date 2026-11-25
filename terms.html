@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="عيادتي ستوديو - قوالب مواقع احترافية للعيادات الطبية وطب الأسنان والجلدية والتجميل، جاهزة للتخصيص مع معاينة مباشرة.">
+  <meta name="keywords" content="قوالب عيادات, قوالب مواقع طبية, تصميم مواقع عيادات أسنان, قوالب جلدية وتجميل">
+  <meta name="author" content="Eyadati Studio">
+
+  <!-- Open Graph (للمشاركة على السوشيال ميديا) -->
+  <meta property="og:title" content="عيادتي ستوديو | قوالب مواقع العيادات">
+  <meta property="og:description" content="قوالب مواقع عيادات متخصصة بتصميم احترافي وتجربة عربية متكاملة.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://yourwebsite.com/og-image.jpg"> <!-- حط رابط صورة اللوجو بتاعك هنا -->
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"> <!-- حط صورة أيقونة صغيرة في فولدر الموقع -->
+  <link rel="stylesheet" href="style.css">
+<title>الشروط والأحكام | عيادتي ستوديو</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Tajawal:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #ffffff; --surface: #f7f9f8; --ink: #1f2937; --ink-soft: #4b5563; --muted: #6b7280; --line: #e5e7eb; --primary: #1e5b4a; --primary-hover: #154335; --font-body: 'IBM Plex Sans Arabic', sans-serif; --font-display: 'Tajawal', sans-serif; }
+  body { font-family: var(--font-body); background: var(--bg); color: var(--ink); line-height: 1.8; margin: 0; padding: 0; }
+  .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+  .header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  .header h1 { font-family: var(--font-display); color: var(--primary); font-size: 32px; margin-bottom: 10px; }
+  .header p { color: var(--muted); font-size: 14px; }
+  h2 { color: var(--primary); font-size: 20px; margin-top: 30px; margin-bottom: 15px; }
+  p, li { color: var(--ink-soft); font-size: 15px; margin-bottom: 10px; }
+  ul { padding-right: 20px; }
+  .back-link { display: inline-block; margin-top: 40px; color: var(--primary); text-decoration: none; font-weight: 700; border: 2px solid var(--primary); padding: 10px 20px; border-radius: 50px; transition: 0.3s; }
+  .back-link:hover { background: var(--primary); color: #fff; }
+</style>
+<script>
+  // كود قراءة الوضع الليلي
+  const currentTheme = localStorage.getItem('theme');
+  if (currentTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+</script>
+</head>
+<body>
+    <header style="max-width: 900px; margin: 20px auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center;">
+  <a href="index.html" style="display: flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 800; font-size: 20px; font-family: var(--font-display);">
+    <span style="width: 35px; height: 35px; background: var(--primary); color: #fff; border-radius: 10px; display: grid; place-items: center; font-size: 16px;">✳</span>
+    عيادتي
+  </a>
+
+  <div style="display: flex; gap: 10px;">
+    <!-- زرار الوضع الليلي -->
+    <button id="themeToggle" aria-label="الوضع الليلي" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; display: grid; place-items: center; transition: 0.3s;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    </button>
+
+    <!-- زرار اللغة -->
+    <a href="terms-en.html" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); text-decoration: none; font-weight: 700; font-size: 13px; display: grid; place-items: center; transition: 0.3s;">
+      EN
+    </a>
+  </div>
+</header>
+<div class="container">
+  <div class="header">
+    <h1>الشروط والأحكام</h1>
+    <p>آخر تحديث: أكتوبر ٢٠٢٥</p>
+  </div>
+  <p>مرحباً بك في <strong>عيادتي ستوديو</strong>. باستخدامك لهذا الموقع أو شرائك لأي من قوالبنا، فإنك توافق على الشروط والأحكام الموضحة أدناه.</p>
+
+  <h2>1. الترخيص</h2>
+  <p>عند شرائك لأي قالب من قوالبنا، فإنك تحصل على ترخيص لاستخدام القالب في <strong>موقع واحد</strong> (سواء كان شخصياً أو تجارياً). يُمنع منعاً باتاً:</p>
+  <ul>
+    <li>إعادة بيع القالب أو توزيعه أو مشاركته مع أي طرف آخر.</li>
+    <li>استخدام القالب في أكثر من موقع دون شراء ترخيص إضافي.</li>
+    <li>ادعاء ملكية تصميم القالب أو حقوقه الفكرية.</li>
+  </ul>
+
+  <h2>2. الدفع والتسليم</h2>
+  <p>تتم جميع عمليات الدفع من خلال بوابة الدفع الآمنة <strong>Gumroad</strong>. بمجرد إتمام الدفع بنجاح، سيتم إرسال رابط تحميل الملفات الرقمية إلى بريدك الإلكتروني المسجل.</p>
+
+  <h2>3. سياسة الاسترداد (Refund Policy)</h2>
+  <p>بما أن منتجاتنا هي <strong>منتجات رقمية</strong> (ملفات يتم تحميلها فوراً)، فإننا <strong>لا نقدم أي عمليات استرداد للأموال</strong> بعد إتمام عملية الشراء وتحميل الملفات. نرجو منك مراجعة تفاصيل القالب والمعاينة الحية قبل إتمام الشراء.</p>
+
+  <h2>4. الدعم الفني</h2>
+  <p>نقدم دعماً فنياً أساسياً للمساعدة في تركيب القالب أو الإجابة عن استفساراتك المتعلقة بالملفات المرفقة. الدعم لا يشمل التعديلات المخصصة على التصميم.</p>
+
+  <h2>5. حدود المسؤولية</h2>
+  <p>يتم تقديم القوالب "كما هي". نحن لا نتحمل أي مسؤولية عن أي أضرار مباشرة أو غير مباشرة ناتجة عن استخدام القالب أو عدم القدرة على استخدامه.</p>
+
+  <h2>6. حقوق الملكية الفكرية</h2>
+  <p>جميع التصاميم والأكواد والصور في هذا الموقع هي ملك لـ <strong>عيادتي ستوديو</strong> وهي محمية بموجب قوانين حقوق النشر.</p>
+
+  <h2>7. التغييرات في الشروط</h2>
+  <p>نحتفظ بالحق في تحديث هذه الشروط في أي وقت. استمرارك في استخدام الموقع بعد نشر التغييرات يعني موافقتك عليها.</p>
+
+  <h2>8. القانون الواجب التطبيق</h2>
+  <p>تخضع هذه الشروط وتُفسر وفقاً للقوانين المعمول بها في المملكة العربية السعودية.</p>
+
+  <a href="index.html" class="back-link">العودة للصفحة الرئيسية</a>
+</div>
+</body>
+<script>
+  // ===== الحل السحري للوضع الليلي في كل الصفحات =====
+  document.addEventListener('DOMContentLoaded', () => {
+    const isDark = localStorage.getItem('theme') === 'dark';
+    const toggleBtn = document.getElementById('themeToggle');
+
+    // دالة تغيير الألوان
+    function applyDarkMode(enable) {
+      if (enable) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.body.style.backgroundColor = '#121614';
+        document.body.style.color = '#e5e7eb';
+        // تغيير ألوان الكروت والنصوص لو مش متأثرة بالستايل
+        document.querySelectorAll('.container, .content, .contact-form, .contact-info').forEach(el => {
+          el.style.backgroundColor = '#1a211e';
+          el.style.borderColor = '#2d3748';
+          el.style.color = '#e5e7eb';
+        });
+        document.querySelectorAll('h1, h2, h3, p, label, li').forEach(el => {
+          el.style.color = '#e5e7eb';
+        });
+        document.querySelectorAll('input, textarea').forEach(el => {
+          el.style.backgroundColor = '#2d3748';
+          el.style.color = '#fff';
+          el.style.borderColor = '#4a5568';
+        });
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+        document.body.style.backgroundColor = '';
+        document.body.style.color = '';
+        document.querySelectorAll('.container, .content, .contact-form, .contact-info').forEach(el => {
+          el.style.backgroundColor = '';
+          el.style.borderColor = '';
+          el.style.color = '';
+        });
+        document.querySelectorAll('h1, h2, h3, p, label, li').forEach(el => {
+          el.style.color = '';
+        });
+        document.querySelectorAll('input, textarea').forEach(el => {
+          el.style.backgroundColor = '';
+          el.style.color = '';
+          el.style.borderColor = '';
+        });
+      }
+    }
+
+    // تطبيق الوضع المحفوظ أول ما الصفحة تفتح
+    applyDarkMode(isDark);
+
+    // تشغيل الزرار
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        const currentlyDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const newMode = !currentlyDark;
+        localStorage.setItem('theme', newMode ? 'dark' : 'light');
+        applyDarkMode(newMode);
+      });
+    }
+  });
+</script>
+</html>

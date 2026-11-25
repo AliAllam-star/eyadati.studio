@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us | Eyadati Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Tajawal:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #ffffff; --surface: #f7f9f8; --ink: #1f2937; --ink-soft: #4b5563; --muted: #6b7280; --line: #e5e7eb; --primary: #1e5b4a; --primary-hover: #154335; --accent-light: #e8f3ef; --font-body: 'IBM Plex Sans Arabic', sans-serif; --font-display: 'Tajawal', sans-serif; }
+  [data-theme="dark"] { --bg: #121614; --surface: #1a211e; --ink: #e5e7eb; --ink-soft: #9ca3af; --muted: #6b7280; --line: #2d3748; --primary: #4ade80; --primary-hover: #22c55e; }
+  body { font-family: var(--font-body); background: var(--bg); color: var(--ink); line-height: 1.8; margin: 0; padding: 0; transition: 0.3s; }
+  .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+  .header { text-align: center; margin-bottom: 40px; }
+  .header h1 { font-family: var(--font-display); color: var(--primary); font-size: 32px; margin-bottom: 10px; }
+  .header p { color: var(--muted); font-size: 15px; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+  .contact-info { background: var(--surface); padding: 30px; border-radius: 20px; border: 1px solid var(--line); }
+  .contact-info h2 { color: var(--primary); font-size: 20px; margin-bottom: 20px; }
+  .contact-info p { color: var(--ink-soft); margin-bottom: 15px; }
+  .contact-info a { color: var(--primary); text-decoration: none; font-weight: 600; }
+  .back-link { display: inline-block; margin-top: 40px; color: var(--primary); text-decoration: none; font-weight: 700; border: 2px solid var(--primary); padding: 10px 20px; border-radius: 50px; transition: 0.3s; }
+  @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<header style="max-width: 800px; margin: 20px auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center;">
+  <a href="index-en.html" style="display: flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 800; font-size: 20px; font-family: var(--font-display);"><span style="width: 35px; height: 35px; background: var(--primary); color: #fff; border-radius: 10px; display: grid; place-items: center; font-size: 16px;">✳</span> Eyadati</a>
+  <div style="display: flex; gap: 10px;">
+    <button id="themeToggle" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; display: grid; place-items: center;">🌙</button>
+    <a href="contact.html" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); text-decoration: none; font-weight: 700; font-size: 13px; display: grid; place-items: center;">AR</a>
+  </div>
+</header>
+
+<div class="container">
+  <div class="header"><h1>Contact Us</h1><p>We are here to help and answer your questions.</p></div>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> <a href="mailto:hello@eyadati.studio">hello@eyadati.studio</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/966500000000">+966 50 000 0000</a></p>
+      <p><strong>Working Hours:</strong> Sun - Thu (9 AM - 5 PM)</p>
+    </div>
+    <div class="contact-info" style="display: flex; flex-direction: column; justify-content: center; text-align: center;">
+      <h2 style="margin-bottom: 20px;">Reach Out Directly</h2>
+      <p style="color: var(--ink-soft); margin-bottom: 30px;">Choose your preferred contact method.</p>
+      <a href="https://wa.me/966500000000" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; background: #25D366; color: #fff; text-decoration: none; padding: 15px 20px; border-radius: 50px; font-weight: 700; font-size: 16px; margin-bottom: 15px;">Contact via WhatsApp</a>
+      <a href="mailto:hello@eyadati.studio" style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; background: var(--surface); color: var(--primary); border: 2px solid var(--primary); text-decoration: none; padding: 15px 20px; border-radius: 50px; font-weight: 700; font-size: 16px;">Send Email</a>
+    </div>
+  </div>
+  <div style="text-align: center;"><a href="index-en.html" class="back-link">Back to Home</a></div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const isDark = localStorage.getItem('theme') === 'dark';
+    if (isDark) document.documentElement.setAttribute('data-theme', 'dark');
+    const btn = document.getElementById('themeToggle');
+    if(btn) {
+      btn.addEventListener('click', () => {
+        const nowDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        if(nowDark) { document.documentElement.removeAttribute('data-theme'); localStorage.setItem('theme', 'light'); }
+        else { document.documentElement.setAttribute('data-theme', 'dark'); localStorage.setItem('theme', 'dark'); }
+      });
+    }
+  });
+</script>
+</body>
+</html>

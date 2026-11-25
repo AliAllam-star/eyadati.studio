@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms & Conditions | Eyadati Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Tajawal:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #ffffff; --surface: #f7f9f8; --ink: #1f2937; --ink-soft: #4b5563; --muted: #6b7280; --line: #e5e7eb; --primary: #1e5b4a; --primary-hover: #154335; --accent-light: #e8f3ef; --font-body: 'IBM Plex Sans Arabic', sans-serif; --font-display: 'Tajawal', sans-serif; }
+  [data-theme="dark"] { --bg: #121614; --surface: #1a211e; --ink: #e5e7eb; --ink-soft: #9ca3af; --muted: #6b7280; --line: #2d3748; --primary: #4ade80; --primary-hover: #22c55e; }
+  body { font-family: var(--font-body); background: var(--bg); color: var(--ink); line-height: 1.8; margin: 0; padding: 0; transition: 0.3s; }
+  .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+  .header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  .header h1 { font-family: var(--font-display); color: var(--primary); font-size: 32px; margin-bottom: 10px; }
+  .header p { color: var(--muted); font-size: 14px; }
+  h2 { color: var(--primary); font-size: 20px; margin-top: 30px; margin-bottom: 15px; }
+  p, li { color: var(--ink-soft); font-size: 15px; margin-bottom: 10px; }
+  ul { padding-left: 20px; }
+  .back-link { display: inline-block; margin-top: 40px; color: var(--primary); text-decoration: none; font-weight: 700; border: 2px solid var(--primary); padding: 10px 20px; border-radius: 50px; transition: 0.3s; }
+  .back-link:hover { background: var(--primary); color: #fff; }
+</style>
+</head>
+<body>
+
+<header style="max-width: 800px; margin: 20px auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center;">
+  <a href="index-en.html" style="display: flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 800; font-size: 20px; font-family: var(--font-display);"><span style="width: 35px; height: 35px; background: var(--primary); color: #fff; border-radius: 10px; display: grid; place-items: center; font-size: 16px;">✳</span> Eyadati</a>
+  <div style="display: flex; gap: 10px;">
+    <button id="themeToggle" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; display: grid; place-items: center;">🌙</button>
+    <a href="terms.html" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); text-decoration: none; font-weight: 700; font-size: 13px; display: grid; place-items: center;">AR</a>
+  </div>
+</header>
+
+<div class="container">
+  <div class="header">
+    <h1>Terms & Conditions</h1>
+    <p>Last updated: October 2025</p>
+  </div>
+
+  <p>Welcome to <strong>Eyadati Studio</strong>. By using this website or purchasing any of our templates, you agree to the terms and conditions outlined below.</p>
+
+  <h2>1. License</h2>
+  <p>Upon purchasing any of our templates, you obtain a license to use the template on a <strong>single website</strong> (personal or commercial). It is strictly prohibited to:</p>
+  <ul>
+    <li>Resell, distribute, or share the template with any other party.</li>
+    <li>Use the template on more than one website without purchasing an additional license.</li>
+    <li>Claim ownership of the template's design or intellectual property.</li>
+  </ul>
+
+  <h2>2. Payment & Delivery</h2>
+  <p>All payments are processed securely through <strong>Gumroad</strong>. Once payment is successfully completed, a download link for the digital files will be sent to your registered email address.</p>
+
+  <h2>3. Refund Policy</h2>
+  <p>Since our products are <strong>digital products</strong> (files downloaded immediately), we <strong>do not offer any refunds</strong> after purchase and download. Please review the template details and live preview before purchasing.</p>
+
+  <h2>4. Technical Support</h2>
+  <p>We provide basic technical support to assist with template installation or inquiries related to the included files. Support does not cover custom design modifications.</p>
+
+  <h2>5. Limitation of Liability</h2>
+  <p>Templates are provided "as is". We assume no liability for any direct or indirect damages resulting from the use or inability to use the template.</p>
+
+  <h2>6. Intellectual Property</h2>
+  <p>All designs, code, and images on this website are the property of <strong>Eyadati Studio</strong> and are protected by copyright laws.</p>
+
+  <h2>7. Changes to Terms</h2>
+  <p>We reserve the right to update these terms at any time. Your continued use of the site after changes are posted constitutes your agreement.</p>
+
+  <h2>8. Governing Law</h2>
+  <p>These terms are governed by and construed in accordance with the laws of the Kingdom of Saudi Arabia.</p>
+
+  <a href="index-en.html" class="back-link">Back to Home</a>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const isDark = localStorage.getItem('theme') === 'dark';
+    if (isDark) document.documentElement.setAttribute('data-theme', 'dark');
+    const btn = document.getElementById('themeToggle');
+    if(btn) {
+      btn.addEventListener('click', () => {
+        const nowDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        if(nowDark) { document.documentElement.removeAttribute('data-theme'); localStorage.setItem('theme', 'light'); }
+        else { document.documentElement.setAttribute('data-theme', 'dark'); localStorage.setItem('theme', 'dark'); }
+      });
+    }
+  });
+</script>
+</body>
+</html>
